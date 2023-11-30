@@ -221,7 +221,7 @@ This project is protected under the MIT License.
 
 ## 👏 Acknowledgments
 
-- This projects is inspired byt SalesGPT and other open source projects. But not copy paste, or any idea has not been stolen. Thanks to all the contributors.
+- This projects is inspired by SalesGPT and other open source projects. But not copy paste, or any idea has not been stolen. Thanks to all the contributors.
 
 ## 🛠️How to deploy the project
 You can deploy the project using Docker or Streamlit. You can also deploy the project using Heroku, AWS, or any other cloud platform.
