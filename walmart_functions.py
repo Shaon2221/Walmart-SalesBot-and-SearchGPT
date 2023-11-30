@@ -1,3 +1,4 @@
+"""This code is used for /walmartbot endpoint in fastapi. It is used to process the message, search for query in walmart vector database, gather information and return the response with source product URL."""
 import os
 import re, json
 # make sure you have .env file saved locally with your API keys
