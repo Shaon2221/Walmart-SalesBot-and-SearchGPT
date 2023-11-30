@@ -154,13 +154,13 @@ pip install -r requirements.txt
 ```sh
 python run_api.py
 ```
-### 🤖 Running using Docker
+### 🕹️ Running using Docker
 ```
 docker build -t bot .
 docker run -p 5000:5000 bot
 ```
 
-### 🧪 Interface
+### ✨ Interface
 ```sh
 streamlit run streamlit_interface.py
 ```
