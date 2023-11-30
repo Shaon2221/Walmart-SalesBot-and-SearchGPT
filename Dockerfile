@@ -7,5 +7,5 @@ FROM python:3.11-slim-buster AS runtime
 WORKDIR /app
 COPY --from=build /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
 COPY --from=build /app .
-EXPOSE 4501
-CMD ["python3", "run_api.py", "--host", "0.0.0.0", "--port", "4501"]
+EXPOSE 5000
+CMD ["python3", "run_api.py", "--host", "0.0.0.0", "--port", "5000"]
