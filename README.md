@@ -34,7 +34,7 @@
 - [🚀 Getting Started](#-getting-started)
     - [🔧 Installation](#-installation)
     - [🤖 Running Walmart-SalesBot-and-SearchGPT](#-running-Walmart-SalesBot-and-SearchGPT)
-    - [🧪 Tests](#-tests)
+    - [🕹️ Running using Docker](#-running-using-Docker)
 - [🛣 Roadmap](#-roadmap)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
