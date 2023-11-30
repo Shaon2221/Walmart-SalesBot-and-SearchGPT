@@ -1,51 +1,211 @@
-## Description
-This projects is inspired byt SalesGPT and other open source projects. But not copy paste, or any idea has not been stolen. Thanks to all the contributors.
-Here, it is a streamlit interface with two options: Walmart Bot and SearchGPT.
-Walmart_Bot: You can use this interface to search for products on Walmart and also get answers of any product related questions(like: What is the price of iPhone 12?, Compare feature of products). You will get source/product link along with the answer.
-I have used OpenAI models, you can use any open sources model from HuggingFace as well. Langchain has been used to make system, I have used Prompt engineering, RetrievalQA, tools, Vector Database, and other techniques to make this system. Pincecone has been used as vector database. You can use any other vector database/traditional database as well using llamaindex. OpenAI embedding has been used, but open-source embeddings can be performed.
-FastAPI has been used to make the API, but you can use Flask or any other framework as well.
-Streamlit has been used to make the interface, but you can use any other framework as well.
-SearchGPT: You can also use this interface to search for any question and get answers from the internet.
-LangChain and different tools have been used along with large language model to make this system.
+<div align="center">
+<h1 align="center">
+<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
+<br>WALMART-SALESBOT-AND-SEARCHGPT</h1>
+<h3>◦ SalesBot-SearchGPT: Innovating Walmart, One Code Commit at a Time!</h3>
+<h3>◦ Developed with the software and tools below.</h3>
 
-## Folder Structure
-- .env
-- .gitignore
-- csv_to_vectore_database(pinecone).ipynb
-- Data
-  - WMT_Grocery_Data.csv
-- Images
-  - bg-image.png
-  - searchGPT_screenshot.png
-  - walmart_bot_screenshot.png
-- Dockerfile
-- README.md
-- requirements.txt
-- streamlit_interface.py
-- walmart_functions.py
-- search_capabilites.py
-- run_api.py
+<p align="center">
+<img src="https://img.shields.io/badge/tqdm-FFC107.svg?style=flat-square&logo=tqdm&logoColor=black" alt="tqdm" />
+<img src="https://img.shields.io/badge/Jupyter-F37626.svg?style=flat-square&logo=Jupyter&logoColor=white" alt="Jupyter" />
+<img src="https://img.shields.io/badge/arXiv-B31B1B.svg?style=flat-square&logo=arXiv&logoColor=white" alt="arXiv" />
+<img src="https://img.shields.io/badge/OpenAI-412991.svg?style=flat-square&logo=OpenAI&logoColor=white" alt="OpenAI" />
 
-## How to run the project
-Using Docker:
+<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat-square&logo=Python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/Docker-2496ED.svg?style=flat-square&logo=Docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/Pytest-0A9EDC.svg?style=flat-square&logo=Pytest&logoColor=white" alt="Pytest" />
+<img src="https://img.shields.io/badge/Wikipedia-000000.svg?style=flat-square&logo=Wikipedia&logoColor=white" alt="Wikipedia" />
+</p>
+<img src="https://img.shields.io/github/license/Shaon2221/Walmart-SalesBot-and-SearchGPT?style=flat-square&color=5D6D7E" alt="GitHub license" />
+<img src="https://img.shields.io/github/last-commit/Shaon2221/Walmart-SalesBot-and-SearchGPT?style=flat-square&color=5D6D7E" alt="git-last-commit" />
+<img src="https://img.shields.io/github/commit-activity/m/Shaon2221/Walmart-SalesBot-and-SearchGPT?style=flat-square&color=5D6D7E" alt="GitHub commit activity" />
+<img src="https://img.shields.io/github/languages/top/Shaon2221/Walmart-SalesBot-and-SearchGPT?style=flat-square&color=5D6D7E" alt="GitHub top language" />
+</div>
+
+---
+
+## 📖 Table of Contents
+- [📖 Table of Contents](#-table-of-contents)
+- [📍 Overview](#-overview)
+- [📦 Features](#-features)
+- [📂 repository Structure](#-repository-structure)
+- [⚙️ Modules](#modules)
+- [🚀 Getting Started](#-getting-started)
+    - [🔧 Installation](#-installation)
+    - [🤖 Running Walmart-SalesBot-and-SearchGPT](#-running-Walmart-SalesBot-and-SearchGPT)
+    - [🧪 Tests](#-tests)
+- [🛣 Roadmap](#-roadmap)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [👏 Acknowledgments](#-acknowledgments)
+
+---
+
+
+## 📍 Overview
+
+The Walmart SalesBot and SearchGPT repository provides a machine learning solution to improve data analysis and search capabilities. The tool includes an AI chatbot, enabling users to interact with either the'WalmartBot' or'SearchGPT' bot in real-time. It utilizes a robust conversational AI agent that can fetch webpage content, gather weather details, conduct searches, and retrieve news. It provides a sales assistance system for Walmart, implementing stages of sales conversations and managing customer interactions. Additionally, the repository includes an API server for product search and information retrieval.
+
+---
+
+## 📦 Features
+
+|    | Feature            | Description                                                                                                        |
+|----|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| ⚙️ | **Architecture**   | The system is a conversational agent combining REST APIs, Search and Recommendation systems built with Python. It utilizes Python scripts, Jupyter Notebook, and Docker for deployment.|
+| 📄 | **Documentation**  | The repository lacks a comprehensive README.md file, providing a detailed explanation of the system. Absence of inline comments make it hard to understand the modules' purpose.|
+| 🔗 | **Dependencies**   | The system extensively relies on external libraries such as Pydantic, FAISS, OpenAI, Pinecone, DuckDuckGo, and much more for operating its functionalities.|
+| 🧩 | **Modularity**     | The system is loosely coupled and separated into several scripts, each responsible for handling a certain aspect, making it adaptable, understandable, and maintainable.|
+| 🧪 | **Testing**        | The system uses pytest as a testing framework but lacks any presence of dedicated test cases to validate its functionality.   |
+| ⚡️ | **Performance**    | The system's performance heavily relies on the  efficiency of GPT-4 AI model & Pinecone search engine, hence can be inferred to be performant. But it lacks performance testing or benchmarking.|
+| 🔐 | **Security**       | There aren't any explicit security measures found. The system being API based, needs to ensure critical information is sanitized before processing. |
+| 🔀 | **Version Control**| The repository lacks specific version control strategy as there's absence of branches, tags or even comprehensive commit messages. |
+| 🔌 | **Integrations**   | The system integrates with various Python libraries, APIs, GPT-4 AI model, and Walmart's product data, supporting the bot functionalities.|
+| 📶 | **Scalability**    | The system is scalable due to its loosely coupled design that would support future enhancements, provided there is efficient error handling and architectural improvements. |
+
+
+---
+
+
+## 📂 Repository Structure
+
+```sh
+└── Walmart-SalesBot-and-SearchGPT/
+    ├── Data/
+    ├── Dockerfile
+    ├── Images/
+    ├── csv_to_vectore_database(pinecone).ipynb
+    ├── requirements.txt
+    ├── run_api.py
+    ├── search_capabilities.py
+    ├── streamlit_interface.py
+    └── walmart_functions.py
+
 ```
-docker build -t bot .
-docker run -p 5000:5000 bot
+
+---
+
+
+## ⚙️ Modules
+
+<details closed><summary>Root</summary>
+
+| File                                                                                                                                                     | Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ---                                                                                                                                                      | ---                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [streamlit_interface.py](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/streamlit_interface.py)                                   | The code powers an AI chatbot web application with Streamlit. It allows users to choose between "WalmartBot" and "SearchGPT" bot types and interact with them real-time. It maintains a chat interface, showing recent user-bot conversations applying a dark or light theme based on user preference. Both types of bot responses are handled via POST requests to defined endpoints.                                                                                                                                                                                                                                                                                             |
+| [search_capabilities.py](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/search_capabilities.py)                                   | The code implements a conversational AI agent in Python. It integrates third-party tools to fetch webpage content, gather weather details, conduct searches (via DuckDuckGo), and retrieve news. Besides, it specifies a set of behavior rules for the AI. The'get_response' function runs an input message through the AI agent, which interacts with tools based on its training and guidelines, getting necessary data, and returning a response. The system hides detailed error responses from users, replacing them with a generic misunderstanding message.                                                                                                                 |
+| [csv_to_vectore_database(pinecone).ipynb](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/csv_to_vectore_database(pinecone).ipynb) | The code represents a part of a Jupyter notebook in the directory Walmart-SalesBot-and-SearchGPT. It attempts to install necessary dependencies such as protobuf, fastapi, uvicorn, langchain, openai, tiktoken, pinecone-client, and pinecone_datasets using pip. However, it encounters an error while attempting to install a specific version of pinecone_datasets.                                                                                                                                                                                                                                                                                                            |
+| [run_api.py](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/run_api.py)                                                           | The code comprises an API for a Walmart Sales Bot, which searches for products and returns relevant information, and a Search AI, which fetches answers from sources like DuckDuckGo, Wikipedia, weather API, and Arxiv. The API employs FastAPI and pydantic models for request/response handling. Both services initialize a new conversation if no user inputs are present or continue pre-existing conversations. The bots respond with messages and potential sources of their responses. Errors raise an HTTP Exception.                                                                                                                                                     |
+| [walmart_functions.py](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/walmart_functions.py)                                       | This complex Python script implements a sales assistance system for Walmart. The tool leverages OpenAI's GPT-4 model and Natural Language Understanding chains to guide sales conversations through different stages (Introduction, Product presentation, and Other queries) based on conversation history. It integrates with Pinecone to access a vector-based product database, offering product search and information retrieval for shaping responses. A custom class is designed to manage sales conversations, initiating conversations, determining next stages, handling customer input, and generating responses, optionally using a knowledge base for product queries. |
+| [Dockerfile](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/Dockerfile)                                                           | The Dockerfile deploys a Python-based app for a Walmart sale-search bot through a Docker environment. It works by installing dependencies from requirements.txt, copying application files into the container, and running the application using the command'run_api.py' on port 4501. Other scripts in the repository appear to implement related functions like data conversion to vector format, search capabilities, and a Streamlit user interface.                                                                                                                                                                                                                           |
+| [requirements.txt](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/requirements.txt)                                               | The code sets up a Walmart SalesBot and SearchGPT program that utilizes machine learning and natural language processing for data analysis and search-related capabilities. Dependencies include openai and pytest for testing, faiss-cpu and pinecone-client for vector search indexing, black and flake8 for code formatting, Pydantic for data validation and settings management, and chromadb and xmltodict for handling data. Search results can be enhanced by duckduckgo-search, wikipedia and arxiv. The program includes an API server using uvicorn.                                                                                                                    |
+
+</details>
+
+---
+
+## 🚀 Getting Started
+
+***Dependencies***
+
+Please ensure you have the following dependencies installed on your system:
+
+`- ℹ️ Dependency 1`
+
+`- ℹ️ Dependency 2`
+
+`- ℹ️ ...`
+
+### 🔧 Installation
+
+1. Clone the Walmart-SalesBot-and-SearchGPT repository:
+```sh
+git clone https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT
 ```
-Using Streamlit:
+
+2. Change to the project directory:
+```sh
+cd Walmart-SalesBot-and-SearchGPT
 ```
-streamlit run streamlit_interface.py
+
+3. Install the dependencies:
+```sh
+pip install -r requirements.txt
 ```
 
-## How to use the project
-You can use this interface to search for products on Walmart and also get answers of any product related questions(like: What is the price of iPhone 12?, Compare feature of products). You will get source/product link along with the answer.
-You can also use this interface to search for any question and get answers from the internet.
+### 🤖 Running Walmart-SalesBot-and-SearchGPT
 
-## How to contribute
-You can contribute by adding more features to the system, or by adding open source models/embeddibg to the system. You can also contribute by changing interface to the system. You can also contribute by adding more features to the interface.
+```sh
+python main.py
+```
 
-## How to deploy the project
-You can deploy the project using Docker or Streamlit. You can also deploy the project using Heroku, AWS, or any other cloud platform.
+### 🧪 Tests
+```sh
+pytest
+```
 
-## How to contact the author
-You can contact me at: [LinkedIn](https://www.linkedin.com/in/shaon2221)
+---
+
+
+## 🛣 Project Roadmap
+
+> - [X] `ℹ️  Task 1: Implement X`
+> - [ ] `ℹ️  Task 2: Implement Y`
+> - [ ] `ℹ️ ...`
+
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here are several ways you can contribute:
+
+- **[Submit Pull Requests](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/issues)**: Submit bugs found or log feature requests for SHAON2221.
+
+#### *Contributing Guidelines*
+
+<details closed>
+<summary>Click to expand</summary>
+
+1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
+   ```sh
+   git clone <your-forked-repo-url>
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear and concise message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to GitHub**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+
+Once your PR is reviewed and approved, it will be merged into the main branch.
+
+</details>
+
+---
+
+## 📄 License
+
+
+This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+
+---
+
+## 👏 Acknowledgments
+
+- List any resources, contributors, inspiration, etc. here.
+
+[**Return**](#Top)
+
+---
