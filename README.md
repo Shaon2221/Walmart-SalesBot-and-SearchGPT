@@ -3,7 +3,7 @@
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
 <br>WALMART-SALESBOT-AND-SEARCHGPT</h1>
 <h3>◦ SalesBot-SearchGPT: Innovating Sales Agent of Walmart, and Custom Search GPT bot!</h3>
-<h5></h5>Connect with me: </h5> 🔗 [LinkedIn](https://www.linkedin.com/in/shaon2221) 🚀
+### Connect with me: 🔗 [LinkedIn](https://www.linkedin.com/in/shaon2221) 🚀
 <h3>◦ Developed with the software and tools below.</h3>
 
 <p align="center">
