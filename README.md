@@ -2,7 +2,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
 <br>WALMART-SALESBOT-AND-SEARCHGPT</h1>
-<h3>◦ SalesBot-SearchGPT: Innovating Walmart, One Code Commit at a Time!</h3>
+<h3>◦ SalesBot-SearchGPT: Innovating Sales Agent of Walmart, and Custom Search GPT bot!</h3>
 <h3>◦ Developed with the software and tools below.</h3>
 
 <p align="center">
@@ -57,10 +57,10 @@ The Walmart SalesBot and SearchGPT repository provides a machine learning soluti
 | 🔗 | **Dependencies**   | The system extensively relies on external libraries such as Pydantic, FAISS, OpenAI, Pinecone, DuckDuckGo, and much more for operating its functionalities.|
 | 🧩 | **Modularity**     | The system is loosely coupled and separated into several scripts, each responsible for handling a certain aspect, making it adaptable, understandable, and maintainable.|
 | 🧪 | **Testing**        | The system uses pytest as a testing framework but lacks any presence of dedicated test cases to validate its functionality.   |
-| ⚡️ | **Performance**    | The system's performance heavily relies on the  efficiency of GPT-4 AI model & Pinecone search engine, hence can be inferred to be performant. But it lacks performance testing or benchmarking.|
+| ⚡️ | **Performance**    | The system's performance heavily relies on the  efficiency of GPT AI model & Pinecone search engine, hence can be inferred to be performant. But it lacks performance testing or benchmarking.|
 | 🔐 | **Security**       | There aren't any explicit security measures found. The system being API based, needs to ensure critical information is sanitized before processing. |
 | 🔀 | **Version Control**| The repository lacks specific version control strategy as there's absence of branches, tags or even comprehensive commit messages. |
-| 🔌 | **Integrations**   | The system integrates with various Python libraries, APIs, GPT-4 AI model, and Walmart's product data, supporting the bot functionalities.|
+| 🔌 | **Integrations**   | The system integrates with various Python libraries, APIs, GPT AI model, and Walmart's product data, supporting the bot functionalities.|
 | 📶 | **Scalability**    | The system is scalable due to its loosely coupled design that would support future enhancements, provided there is efficient error handling and architectural improvements. |
 
 
@@ -108,13 +108,7 @@ The Walmart SalesBot and SearchGPT repository provides a machine learning soluti
 
 ***Dependencies***
 
-Please ensure you have the following dependencies installed on your system:
-
-`- ℹ️ Dependency 1`
-
-`- ℹ️ Dependency 2`
-
-`- ℹ️ ...`
+Please ensure you have the following dependencies installed on your system: [requirements.txt](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/requirements.txt)
 
 ### 🔧 Installation
 
@@ -136,23 +130,25 @@ pip install -r requirements.txt
 ### 🤖 Running Walmart-SalesBot-and-SearchGPT
 
 ```sh
-python main.py
+python run_api.py
+```
+### 🤖 Running using Docker
+```
+docker build -t bot .
+docker run -p 5000:5000 bot
 ```
 
-### 🧪 Tests
+### 🧪 Interface
 ```sh
-pytest
+streamlit run streamlit_interface.py
 ```
 
 ---
 
 
-## 🛣 Project Roadmap
+## 🛣 Project Screenshots
 
-> - [X] `ℹ️  Task 1: Implement X`
-> - [ ] `ℹ️  Task 2: Implement Y`
-> - [ ] `ℹ️ ...`
-
+![Walmart_Bot Screenshot](https://raw.githubusercontent.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/main/Images/walmart_bot-screenshot.png)
 
 ---
 
@@ -162,7 +158,7 @@ Contributions are welcome! Here are several ways you can contribute:
 
 - **[Submit Pull Requests](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
 - **[Join the Discussions](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/issues)**: Submit bugs found or log feature requests for SHAON2221.
+- **[Report Issues](https://github.com/Shaon2221/Walmart-SalesBot-and-SearchGPT/issues)**: Submit bugs found or log feature requests for Shaon2221.
 
 #### *Contributing Guidelines*
 
@@ -198,13 +194,19 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 ## 📄 License
 
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+This project is protected under the MIT License.
 
 ---
 
 ## 👏 Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+- This projects is inspired byt SalesGPT and other open source projects. But not copy paste, or any idea has not been stolen. Thanks to all the contributors.
+
+## 🛠️How to deploy the project
+You can deploy the project using Docker or Streamlit. You can also deploy the project using Heroku, AWS, or any other cloud platform.
+
+## 🧑‍🚀How to contact the Author
+You can contact me at: [LinkedIn](https://www.linkedin.com/in/shaon2221)
 
 [**Return**](#Top)
 
